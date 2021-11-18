@@ -25,6 +25,6 @@ const create_list = (driverId, position, givenName, familyName, nationality, spo
 
 const loadData = async (jsonData) => {
     const racerList = await jsonData
-
+    document.querySelector(DOM_Elements.racers).innerHTML = ''
     racerList.forEach(element => create_list(element.Driver.driverId, element.position, element.Driver.givenName, element.Driver.familyName, element.Driver.nationality, element.Constructors[0].name, element.points))
 }
