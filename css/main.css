@@ -1,8 +1,10 @@
-/* body {
-    background-color: orange;
-} */
-
 .car {
     width: 20%;
     float: right;
+}
+
+.head {
+    margin-left: 17%;
+    font-size: 400%;
+    font-family: 'Franklin Gothic Medium';
 }

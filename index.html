@@ -10,26 +10,27 @@
 <link rel="stylesheet" href="css/main.css">
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="js/main.js" defer></script>
-<title>Racer API</title>
+<title>F1 Racer API</title>
 </head>
 <body>
+
     <img class = "car" src="images/undraw_electric_car_b7hl.png" alt="car">
-    <h1>F1 Racing Data</h1>
+    <h1 class = 'head'>F1 Racing Data</h1>
     <!-- Ranger data HTML elements -->
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-12">
                 <form name="testData" id="form">
                     <label for="season">Year: </label>
-                    <input type="text" name="season" id="season">
-            
-                    <label for="round">Round: </label>
-                    <input type="text" name="round" id="round">
+                    <input type="text" name="season" id="season" placeholder="Input Season Here...">
 
-                <button class="btn btn-primary" type='submit' id='submitButton' onclick='loadData()'>Find Standings</button>                
+                    <label for="round">Round: </label>
+                    <input type="text" name="round" id="round" placeholder="Input Round Here...">
+
+                <button class="btn btn-danger" type='submit' id='submitButton' onclick='loadData()'>Find Standings</button>
                 </form>
                 <section class="list-group racer-list">
-                    <!-- Place API content here -->
+                    
                 </section>
             </div>
         </div>
